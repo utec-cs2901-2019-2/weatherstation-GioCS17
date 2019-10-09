@@ -1,7 +1,8 @@
-package cs2901.utec.edu.pe;
-
+import java.util.List;
+import java.util.ArrayList;
 public interface Subject {
-    void registerObserver();
-    void removeObserver();
-    void notifyObservers();
+    public abstract void registerObserver(Observer o);
+    public abstract void removeObserver(Observer o);
+    public abstract void notifyObservers();
+    public List<Observer> Observers=new ArrayList<Observer>();
 }

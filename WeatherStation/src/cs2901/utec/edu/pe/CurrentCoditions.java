@@ -1,13 +1,11 @@
-package cs2901.utec.edu.pe;
+public class CurrentCoditions implements Observer,DisplayElement{
 
-public class CurrentCoditions implements Observer {
-
+    public WeatherData subject=new WeatherData();
     @Override
     public void update() {
-
     }
-
     public void display(){
-
+      System.out.println(subject.getTemperature());
+      System.out.println(subject.getHumidity());
     }
 }
